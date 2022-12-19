@@ -39,6 +39,29 @@ class battle {
     ) {
       console.log(this.samurais[0].name, 'wins')
     }
+    if (
+      this.samurais[0].weapon === 'Katanas' &&
+      this.samurais[1].weapon === 'Sword'
+    ) {
+      console.log(this.samurais[1].name, 'wins')
+    }
+    if (
+      this.samurais[0].weapon === 'Naginata' &&
+      this.samurais[1].weapon === 'Katanas'
+    ) {
+      console.log(this.samurais[1].name, 'wins')
+    }
+    if (
+      this.samurais[0].weapon === 'Sword' &&
+      this.samurais[1].weapon === 'Naginata'
+    ) {
+      console.log(this.samurais[1].name, 'wins')
+    }
+    if (
+      this.samurais[0].weapon === this.samurais[1].weapon
+    ) {
+      console.log('Both samurais are eliminated')
+    }
   }
 }
 
