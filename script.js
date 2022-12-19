@@ -33,6 +33,12 @@ class battle {
     ) {
       console.log(this.samurais[0].name, 'wins')
     }
+    if (
+      this.samurais[0].weapon === 'Naginata' &&
+      this.samurais[1].weapon === 'Sword'
+    ) {
+      console.log(this.samurais[0].name, 'wins')
+    }
   }
 }
 
